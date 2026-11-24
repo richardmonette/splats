@@ -35,7 +35,7 @@ fn assert_aligned(cloud: &SplatCloud) {
 #[test]
 fn retain_keeps_arrays_aligned() {
     let mut cloud = indexed_cloud(20, 2);
-    let removed = cloud.retain(|s| s.position[0] as usize % 3 == 0);
+    let removed = cloud.retain(|s| (s.position[0] as usize).is_multiple_of(3));
     assert_eq!(removed, 13);
     assert_eq!(cloud.len(), 7);
     assert_aligned(&cloud);

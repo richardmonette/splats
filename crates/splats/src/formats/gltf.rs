@@ -810,7 +810,7 @@ impl Builder {
     ) {
         let offset = self.bin.len();
         self.bin.extend_from_slice(bytes);
-        while self.bin.len() % 4 != 0 {
+        while !self.bin.len().is_multiple_of(4) {
             self.bin.push(0);
         }
         let mut view = json!({ "buffer": 0, "byteOffset": offset, "byteLength": bytes.len(), "target": 34962 });
