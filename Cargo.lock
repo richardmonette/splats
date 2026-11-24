@@ -236,7 +236,7 @@ dependencies = [
 
 [[package]]
 name = "splats"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "image-webp",
  "miniz_oxide",
@@ -246,7 +246,7 @@ dependencies = [
 
 [[package]]
 name = "splats-cli"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "clap",
  "splats",
