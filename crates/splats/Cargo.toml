@@ -1,0 +1,17 @@
+[package]
+name = "splats"
+description = "Read, write and transform 3D Gaussian splat files"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+readme = "../../README.md"
+keywords = ["gaussian-splatting", "3dgs", "ply", "graphics", "point-cloud"]
+categories = ["graphics", "parser-implementations", "rendering::data-formats"]
+
+[dependencies]
+image-webp = "0.2.4"
+miniz_oxide = "0.9.1"
+ruzstd = "0.8.2"
+serde_json = "1.0.154"

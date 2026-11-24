@@ -1,0 +1,19 @@
+[package]
+name = "splats-cli"
+description = "Command-line tool to inspect, convert and clean up 3D Gaussian splat files"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+readme = "../../README.md"
+keywords = ["gaussian-splatting", "3dgs", "ply", "cli", "graphics"]
+categories = ["command-line-utilities", "graphics"]
+
+[[bin]]
+name = "splats"
+path = "src/main.rs"
+
+[dependencies]
+splats = { path = "../splats", version = "0.1.0" }
+clap = { version = "4", features = ["derive"] }
